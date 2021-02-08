@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/garrey/Documents/Projects/CrackingCodingInterview/CrackingCodingInterview.csproj": {}
+  },
+  "projects": {
+    "/Users/garrey/Documents/Projects/CrackingCodingInterview/CrackingCodingInterview.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/garrey/Documents/Projects/CrackingCodingInterview/CrackingCodingInterview.csproj",
+        "projectName": "CrackingCodingInterview",
+        "projectPath": "/Users/garrey/Documents/Projects/CrackingCodingInterview/CrackingCodingInterview.csproj",
+        "packagesPath": "/Users/garrey/.nuget/packages/",
+        "outputPath": "/Users/garrey/Documents/Projects/CrackingCodingInterview/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/garrey/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/Users/garrey/Documents/Projects/CrackingCodingInterview/bin/Debug/netcoreapp2.2/CrackingCodingInterview.deps.json
+/Users/garrey/Documents/Projects/CrackingCodingInterview/bin/Debug/netcoreapp2.2/CrackingCodingInterview.runtimeconfig.json
+/Users/garrey/Documents/Projects/CrackingCodingInterview/bin/Debug/netcoreapp2.2/CrackingCodingInterview.runtimeconfig.dev.json
+/Users/garrey/Documents/Projects/CrackingCodingInterview/bin/Debug/netcoreapp2.2/CrackingCodingInterview.dll
+/Users/garrey/Documents/Projects/CrackingCodingInterview/bin/Debug/netcoreapp2.2/CrackingCodingInterview.pdb
+/Users/garrey/Documents/Projects/CrackingCodingInterview/obj/Debug/netcoreapp2.2/CrackingCodingInterview.csprojAssemblyReference.cache
+/Users/garrey/Documents/Projects/CrackingCodingInterview/obj/Debug/netcoreapp2.2/CrackingCodingInterview.csproj.CoreCompileInputs.cache
+/Users/garrey/Documents/Projects/CrackingCodingInterview/obj/Debug/netcoreapp2.2/CrackingCodingInterview.AssemblyInfoInputs.cache
+/Users/garrey/Documents/Projects/CrackingCodingInterview/obj/Debug/netcoreapp2.2/CrackingCodingInterview.AssemblyInfo.cs
+/Users/garrey/Documents/Projects/CrackingCodingInterview/obj/Debug/netcoreapp2.2/CrackingCodingInterview.dll
+/Users/garrey/Documents/Projects/CrackingCodingInterview/obj/Debug/netcoreapp2.2/CrackingCodingInterview.pdb
