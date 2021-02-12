@@ -33,5 +33,12 @@ public class StrStrSulution
             }
         }
         return output;
-    }   
+    } 
+
+    public static int StrStrRK(string haystack, string needle)
+    {
+        int output = -1;
+
+        return output;
+    }
 }
