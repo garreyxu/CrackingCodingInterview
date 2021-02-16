@@ -3,10 +3,7 @@ using System.Collections.Generic;
 
 class SubsetSolution
 {
-    public SubsetSolution()
-    {
-
-    }
+    public SubsetSolution(){}
 
     public static IList<IList<int>> Subsets(int[] nums) 
     {
