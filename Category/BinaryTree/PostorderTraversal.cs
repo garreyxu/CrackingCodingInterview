@@ -32,4 +32,28 @@ class PostorderTraversalSolution
         }
         res.Add(root.val);
     }
+
+    public static IList<int> PostorderTraversalDC(TreeNode root)
+    {
+        IList<int> postorder = new List<int>();
+        if(root == null)
+        {
+            return postorder;
+        }
+
+        IList<int> left = PostorderTraversalDC(root.left);
+        IList<int> right = PostorderTraversalDC(root.right);
+
+        foreach(int i in left)
+        {
+            postorder.Add(i);
+        }
+        foreach(int j in right)
+        {
+            postorder.Add(j);
+        }
+        postorder.Add(root.val);
+
+        return postorder;
+    }
 }
