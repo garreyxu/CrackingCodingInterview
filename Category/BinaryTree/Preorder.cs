@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 
-class PreorderTraversalSolution
+class PreorderSolution
 {
-    public PreorderTraversalSolution(){}
+    public PreorderSolution(){}
+
+    #region Non Recursion
 
     public static IList<int> PreorderTraversalNonRecursion(TreeNode root)
     {
@@ -32,18 +34,18 @@ class PreorderTraversalSolution
         return preorder;
     }
 
-    public static IList<int> PreorderTraversalRecursion(TreeNode root)
+    #endregion
+
+    #region Traverse
+
+    public static IList<int> PreorderTraversal(TreeNode root)
     {
         IList<int> result = new List<int>();
-        if(root == null)
-        {
-            return result;
-        }
-        traverse(root, result);
+        Traverse(root, result);
         return result;
     }
 
-    private static void traverse(TreeNode root, IList<int> result)
+    private static void Traverse(TreeNode root, IList<int> result)
     {
         if(root == null)
         {
@@ -51,15 +53,36 @@ class PreorderTraversalSolution
         }
 
         result.Add(root.val);
-        if(root.left != null)
-        {
-            traverse(root.left, result);
-        }
-        if(root.right != null)
-        {
-            traverse(root.right, result);
-        }
+        Traverse(root.left, result);
+        Traverse(root.right, result);
     }
+
+    #endregion
+
+    #region Divide and Conquer
+
+    public static List<int> PreorderDivideConquer(TreeNode root)
+    {
+        List<int> result = new List<int>();
+        if (root == null)
+        {
+            return result;
+        }
+
+        // Divide 
+        List<int> left  = PreorderDivideConquer(root.left);
+        List<int> right  = PreorderDivideConquer(root.right);
+
+        // Conquer
+        result.Add(root.val);
+        result.AddRange(left);
+        result.AddRange(right);
+        return result;
+    }
+
+    #endregion
+
+    #region Method
 
     public static IList<IList<int>> GetResultNonRecursion()
     {
@@ -88,14 +111,16 @@ class PreorderTraversalSolution
         TreeNode root1 = new TreeNode(1, null, new TreeNode(2, new TreeNode(3, null, null), null));
         TreeNode root2 = new TreeNode(0, null, null);
 
-        orderedNodes1 = PreorderTraversalRecursion(root1);
-        orderedNodes2 = PreorderTraversalRecursion(root2);
+        orderedNodes1 = PreorderTraversal(root1);
+        orderedNodes2 = PreorderTraversal(root2);
 
         result.Add(orderedNodes1);
         result.Add(orderedNodes2);
 
         return result;
     }
+
+    #endregion 
 
     public static void Print()
     {

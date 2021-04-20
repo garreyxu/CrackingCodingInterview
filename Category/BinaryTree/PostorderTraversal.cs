@@ -4,7 +4,8 @@ class PostorderTraversalSolution
 {
     public PostorderTraversalSolution(){}
 
-    public static IList<int> PostorderTraversalRecursion(TreeNode root)
+    #region Traverse
+    public static IList<int> PostorderTraversal(TreeNode root)
     {
         IList<int> postorder = new List<int>();
         if(root == null)
@@ -33,7 +34,11 @@ class PostorderTraversalSolution
         res.Add(root.val);
     }
 
-    public static IList<int> PostorderTraversalDC(TreeNode root)
+    #endregion
+
+    #region Divide and Conquer
+
+    public static IList<int> PostorderDivideConquer(TreeNode root)
     {
         IList<int> postorder = new List<int>();
         if(root == null)
@@ -41,8 +46,8 @@ class PostorderTraversalSolution
             return postorder;
         }
 
-        IList<int> left = PostorderTraversalDC(root.left);
-        IList<int> right = PostorderTraversalDC(root.right);
+        IList<int> left = PostorderDivideConquer(root.left);
+        IList<int> right = PostorderDivideConquer(root.right);
 
         foreach(int i in left)
         {
@@ -56,4 +61,6 @@ class PostorderTraversalSolution
 
         return postorder;
     }
+
+    #endregion
 }
