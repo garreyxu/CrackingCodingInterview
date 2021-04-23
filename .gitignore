@@ -1,1 +1,6 @@
 obj/Debug/netcoreapp2.2/CrackingCodingInterview.assets.cache
+bin/Debug/netcoreapp2.2/CrackingCodingInterview.dll
+bin/Debug/netcoreapp2.2/CrackingCodingInterview.pdb
+.gitignore
+obj/Debug/netcoreapp2.2/CrackingCodingInterview.dll
+obj/Debug/netcoreapp2.2/CrackingCodingInterview.pdb
