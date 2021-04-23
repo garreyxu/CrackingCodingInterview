@@ -7,7 +7,7 @@ subtree height is not more than 1, then it's a balanced binary tree
 
 using System;
 
-class ResultType 
+public class ResultType 
 {
     public bool isBalanced;
     public int height;
@@ -37,12 +37,12 @@ class BalancedBinaryTree
         ResultType left = Helper(root.left); 
         ResultType right = Helper(root.right);
 
-        if (!left.isBalanced) 
+        if (!left.isBalanced || !right.isBalanced) 
         {
             return new ResultType(false, -1);
         }
 
-        if(!right.isBalanced)
+        if (Math.Abs(left.height - right.height) > 1)
         {
             return new ResultType(false, -1);
         }
